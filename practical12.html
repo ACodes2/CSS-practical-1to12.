@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>HTML and CSS Slideshow</title>
+<style>body
+{
+font-family: Helvetica, sans-serif;padding:5%;
+text-align:center;font-size:50;
+}
+#slideshow
+{
+overflow:hidden;
+height:510px; width:728px;
+margin:0 auto;
+}
+.slide
+{
+float:left; height:510px;
+width:728px;
+}
+slide-wrapper
+{
+width:calc(728px * 4); animation:slide 10s ease
+infinite;
+}
+.slide:nth-child(1)
+{
+background:orange;
+}
+.slide:nth-child(2)
+{
+background:white;
+}
+.slide:nth-child(3)
+{
+background:blue;
+}
+.slide:nth-child(4)
+{
+background:green;
+}
+@keyframes slide
+{
+20% {
+margin-left: 0px;
+} 40% {
+margin-left: calc(-728px * 1);
+} 60% {
+margin-left: calc(-728px * 2);
+} 80% {
+margin-left: calc(-728px * 3);
+}
+}
+</style>
+</head>
+<body>
+<!-- Define the slideshow container -->
+<div id="slideshow">
+<div class="slide-wrapper">
+<!-- Define each of the slides and write the content -->
+<div class="slide">
+<h1 class="slide-number">India is My
+Country
+</h1>
+</div>
+<div class="slide">
+<h1 class="slide-number">
+All indians are my brother and sister
+</h1>
+</div>
+<div class="slide">
+<h1 class="slide-number">I Love My
+Country
+</h1>
+</div>
+<div class="slide">
+<h1 class="slide-number">JayHind
+JayBharat
+</h1>
+</div>
+</div>
+</div>
+</body>
+</html>

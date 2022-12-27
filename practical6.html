@@ -1,0 +1,52 @@
+<!--Create a webpage to implement From Event part-2-->
+<html>
+<head>
+<title>Demo</title>
+<script language="javascript" type="text/javascript">function init()
+{
+var panel=document.getElementById('panel');
+var btn=document.getElementById('btn');
+btn.addEvenListener("dbclick",dbClick);
+btn.addEvenListener("mousedown",mouseDown);
+btn.addEvenListener("mouseup",mouseDown);
+btn.addEvenListener("mouseover",mouseOver);
+btn.addEvenListener("mouseout",mouseOut);
+}
+function click()
+{
+panel.innerHTML+="Mouse clicked<br/>"
+}
+function dblClick()
+{
+panel.innerHTML+="Mouse double clicked<br/>"
+}
+function mouseDown()
+{
+panel.innerHTML+="Mouse down<br/>"
+}
+function mouseup()
+{
+panel.innerHTML+="Mouse up<br/>"}function mouseOver()
+{
+panel.innerHTML+="Mouse over<br/>"
+}
+function mouseOut()
+{
+panel.innerHTML+="Mouse out<br/>"
+}
+function mouseMove()
+{
+panel.innerHTML+="Mouse move<br/>"
+}
+function display()
+{
+alert("You click a button");
+}
+</script>
+</head>
+<body onload="init()">
+<input type="button" id="btn" value="Click Me" onclick=display();ondblclick=display()
+onmousemove="mouseMove"/>
+<p id="panel"></p>
+</body>
+</html

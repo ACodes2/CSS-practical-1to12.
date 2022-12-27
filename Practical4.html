@@ -1,0 +1,21 @@
+<!--Develop a javascript to implement function -->
+<html >
+<head>
+<title>Function in Javascript</title>
+ <script language="javascript" type="text/javascript">
+ var num = 3;
+ var temp = 0;
+ function add ()
+ {
+ if (num <= 10) 
+ { 
+ temp += num;
+ num++;
+ add ();
+ }
+ return temp;
+ }
+ document. write(add());
+</script>
+</head>
+</html>
